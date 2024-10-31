@@ -8,14 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    
+        
+    @State private var flashcards: [Flashcard] = []
+    @State private var showingAddFlashcard: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                List(flashcards) { card in
+                    VStack(alignment: .leading){
+                        Text("Front: \(card.frontText)")
+                        Text("Back: \(card.backText)")
+                    }
+                }
+                Button("Add Flashcard") {
+                    showingAddFlashcard = true
+                }
+                .padding()
+                .sheet(isPresented: $showingAddFlashcard) {
+                    AddFlashcardView(flashcards: $flashcards)
+                }
+            }
+            .navigationTitle("Flashcards")
         }
-        .padding()
     }
 }
 
