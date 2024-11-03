@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		01106C632CD6DCF800DCC5E5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 01106C612CD6DCE300DCC5E5 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		01106BFC2CD4100200DCC5E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		01106BEB2CD4100000DCC5E5 /* flashcard-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flashcard-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01106BFB2CD4100200DCC5E5 /* flashcard-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flashcard-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01106C052CD4100200DCC5E5 /* flashcard-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flashcard-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01106C612CD6DCE300DCC5E5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +84,7 @@
 				01106BFE2CD4100200DCC5E5 /* flashcard-appTests */,
 				01106C082CD4100200DCC5E5 /* flashcard-appUITests */,
 				01106BEC2CD4100000DCC5E5 /* Products */,
+				01106C612CD6DCE300DCC5E5 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01106C632CD6DCF800DCC5E5 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
